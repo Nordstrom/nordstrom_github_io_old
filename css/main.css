@@ -8,4 +8,75 @@ h1,h2,h3,h4,h5 {
   font-family: "brandon-grotesque",sans-serif;
 }
 
+#about_notes {
+  padding-top: 60px;
+}
 
+
+.row {
+  display: block;
+  display: table;
+  content: " ";
+  box-sizing: border-box;
+  width: 76%;
+  height: 100%;
+  margin-left: 12%;
+  margin-right: 12%;
+  /* width: 80%; */
+  /* margin: auto; */
+  text-align: left;
+  font-family: "brandon-grotesque",sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+
+}
+
+.col-lg-4 {
+  /* width: 33.33333333333333%; */
+  width: 31.4%;
+  padding-top: 0px;
+  padding-right: 0.8%;
+  padding-bottom: 0px;
+  padding-left: 0.2%;
+  margin-bottom: 40px;
+}
+
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11 {
+float: left;
+}
+
+.row h2 {
+padding-bottom: 0;
+font-size: 1.1em;
+font-family: BrandonText-Bold,verdana,arial,sans-serif;
+color: #D4E725;
+text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.button {
+
+  font-family: "brandon-grotesque",sans-serif;
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  /* margin: 0 auto; */
+  margin-top: 25px;
+  margin-bottom: 35px;
+  display: block;
+  padding: 2.5em 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(136,136,136,.67);;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+a.button:hover {
+  color: #D4E725;
+  background-color: rgba(36,36,36,1);;
+}

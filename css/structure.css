@@ -145,13 +145,13 @@ h2.col-title {
 #purpose-tag { 
     line-height: 26px;
     width: 460px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     background-color: #FFFFFF;
     border: 3px solid #EEEEEE;            
     position: absolute;
     left: 50%;
-    bottom: 15%;
+    bottom: 35%;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: -235px;
@@ -281,8 +281,16 @@ h2.col-title {
 
 #labs_main_title {
     font-size: 3.75em;
-    margin: 8% 0 5%;
+    margin: 8% 0 0;
     line-height: 1.15em;
+}
+
+#labs_sub_title {
+  color: #888;
+  font-size: 2.75em;
+  margin-bottom: 5%;
+  margin-top: 0;
+  line-height: 1.15em;
 }
 
 #labs_section .horizontal-content .tri-column p {

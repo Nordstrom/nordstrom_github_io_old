@@ -1,0 +1,16 @@
+/* Fonts */
+@import url("https://hello.myfonts.net/count/24eb49");
+
+/*
+@font-face {
+    font-family: 'BrandonGrotesque-Black';
+    src: url('https://alpha.brand.nordstrom.com/content/themes/nbp/assets/fonts/24EB49_0_0.eot');
+    src: url('https://alpha.brand.nordstrom.com/content/themes/nbp/assets/fonts/24EB49_0_0.eot?#iefix') format('embedded-opentype'),url('https://alpha.brand.nordstrom.com/content/themes/nbp/assets/fonts/24EB49_0_0.woff') format('woff'),url('https://alpha.brand.nordstrom.com/content/themes/nbp/assets/fonts/24EB49_0_0.ttf') format('truetype');
+}
+*/
+
+@font-face {
+    font-family: 'BrandonGrotesque-Black';
+    src: url('24EB49_0_0.eot');
+    src: url('24EB49_0_0.eot?#iefix') format('embedded-opentype'),url('24EB49_0_0.woff') format('woff'),url('24EB49_0_0.ttf') format('truetype');
+}    

@@ -1,0 +1,223 @@
+/* Nav-specific reset for when there may not be a meyer reset present */
+#nav-bar ul, #nav-bar li, #nav-bar div, 
+#nav-bar span, #nav-bar p, #nav-bar a, 
+#nav-bar b, #nav-bar u, #nav-bar i, {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#nav-bar ul, #nav-bar ol {
+    list-style: none;
+}
+
+/* Navigation */
+#nav-bar #s {
+    color: #252525;
+    border: 1px solid #CCCCCC;
+    border-radius: 15px;
+    display: inline-block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 110px;
+    padding: 4px 14px 0px 14px;
+    text-align: start;
+    behavior: url('https://alpha.brand.nordstrom.com/content/themes/nbp/js/pie/PIE.htc');
+	height:12px;
+}
+#nav-bar {
+    margin: 0; 
+    background:#242424;
+    color:#fff;
+    text-transform:uppercase;
+    z-index:500;
+    width:100%;
+    min-width:1000px;
+    height: 40px;
+    font-family: "BrandonGrotesque-Black", Verdana, sans-serif;
+    font-weight: normal;    
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;  
+}
+
+#nav-bar ul ul {
+    font-size: 12px;
+}
+
+#nav-bar a {
+    zoom:1;
+    cursor:pointer;
+    color:#fff;
+    letter-spacing:2px;
+    text-decoration: none;         
+    text-transform: uppercase;
+}
+
+#nav-bar li.spacer:hover {
+    background-color: #FFFFFF;
+}
+
+#nav-bar li.spacer hr {
+    margin: 7px 0;
+    border-left-width: 1px;
+    border-left-style: inset;
+    border-left-color: #FFFFFF;
+    border-top-color: #000000;
+    float: none;
+}
+
+#nav-bar a:hover {
+    color: #CCCC00;
+    background:#242424;        
+}
+#nav-bar>ul>li:hover>a {
+    color: #CCCC00;
+}
+
+#nav-bar>ul>li a.active { color: #CCCC00; }
+
+
+#nav-bar ul ul {
+    display: none;
+}
+
+#nav-bar ul > li.has-children:hover {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+#nav-bar ul li:hover > ul {
+    display: block;            
+}
+
+#nav-bar ul {
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+
+#nav-bar ul:after {
+    content: ""; clear: both; display: block;
+}
+
+#nav-bar ul li {
+    float: left;
+    padding: 13px 0;
+    line-height: 14px;
+}
+
+#nav-bar ul li a {
+    display: block;  padding: 0 40px;
+    text-decoration: none;
+}                    
+        
+#nav-bar ul ul {
+    position: absolute; top: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    text-align: left;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    min-width: 240px;
+    behavior: url('https://alpha.brand.nordstrom.com/content/themes/nbp/js/pie/PIE.htc');
+}
+#nav-bar ul ul li {
+    float: none; 
+    position: relative;
+    padding: 5px 18px;
+}
+#nav-bar ul ul li:hover {
+    color: #000000;
+    background-color: #CCCC00;
+}
+#nav-bar ul ul li a {
+    color: #242424;
+    margin: 0px;
+    padding: 0;
+}   
+#nav-bar ul ul li a:hover {
+    color: #000000;
+    background-color: #CCCC00;
+}
+#nav-bar ul ul li { color: #000000; }
+        
+#nav-bar ul ul ul {
+    position: absolute; left: 100%; top:0; margin: 0;
+}    
+
+#nav-bar .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-top: 4px solid #FFFFFF;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom-color: #FFFFFF;
+    content: "";
+    margin-top: 4px;
+    margin-left: 1px;
+}
+#nav-bar ul > li.has-children:hover .caret {
+    border-top: 4px solid #CCCC00;
+    border-bottom-color: #CCCC00;
+}
+#nav-bar ul li ul li.has-children > a::after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #888888;
+    margin-top: 0px;
+    margin-right: -10px;
+}
+#nav-bar ul li ul li.has-children:hover > a::after {
+    border-left-color: #333333;
+}
+
+/* Ipad stuff */
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    #nav-bar {
+        max-width: 980px;
+        min-width: 320px;
+    }
+    .skematik-site-wrap #nav-bar {
+        max-width: 780px;
+    }
+    #nav-bar ul ul {
+        min-width: 100px;
+    }
+
+    #nav-bar > ul > li {
+        max-width: 180px;
+    }
+
+    .skematik-site-wrap #nav-bar > ul > li {
+        max-width: 140px;
+        font-size: 0.7em;
+    }
+    .skematik-site-wrap #nav-help-section ul {
+        right: 10px;
+    }
+    #nav-bar ul li a {
+        padding: 0 8px;
+    }
+}
+
+#nav-bar li.emphasized>a, #nav-bar li.emphasized>a:hover { color: #CCCC00 !important; }

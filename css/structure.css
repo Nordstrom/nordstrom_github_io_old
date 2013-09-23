@@ -165,11 +165,16 @@ h2.col-title {
     text-align: center;
     /* background-image: url(../images/purpose.jpg); */
     font-weight: 300;
-    height: 200%;
+    height: 240%;
     background-color: #3E3E3D;
 }
 
-#labsA, #innovationB {
+#labsA {
+    height: 50%;
+    min-height: 800px;
+}
+
+#innovationB {
     height: 50%;
     min-height: 500px;
 }
